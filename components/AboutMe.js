@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 
-export default function () {
+export default function AboutMe () {
   return (
     <section id="aboutMe" className=" bg-slate-700  leading-relaxed h-max  ">
       <Typography
