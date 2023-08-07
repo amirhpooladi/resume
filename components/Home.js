@@ -2,19 +2,18 @@ import React from "react";
 import { Button, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TelegramIcon from "@mui/icons-material/Telegram";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import Header from "./Header";
+
 
 export default function Home() {
   return (
     <>
     
-    <section id="home" className=" ">
+    <section id="home">
     
       <Typography variant="h5" color="white" py={3}>
         Hello,
-        <span className=" text-green-600"> I'm Amirhossein Pooladi </span>
+        <span className=" text-green-600"> Im Amirhossein Pooladi </span>
         Front-End Developer
       </Typography>
       <Typography variant="body1" color="white" py={2}>
