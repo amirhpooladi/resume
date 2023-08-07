@@ -17,7 +17,7 @@ export default function NavBar() {
         <ButtonGroup variant="text">
           <div className=" lg:flex lg:flex-row">
             <Link
-              to="home"
+              to="./home"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -33,7 +33,7 @@ export default function NavBar() {
               </ListItemButton>
             </Link>
             <Link
-              to="skills"
+              to="./skills"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -45,7 +45,7 @@ export default function NavBar() {
               </ListItemButton>
             </Link>
             <Link
-              to="contact"
+              to="./contact"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -59,7 +59,7 @@ export default function NavBar() {
           </div>
           <div className="lg:flex lg:flex-row">
             <Link
-              to="aboutMe"
+              to="./aboutMe"
               activeClass="active"
               spy={true}
               smooth={true}

@@ -16,7 +16,7 @@ export default function Header() {
       <section id="header" className=" flex justify-between mt-5">
         <Grid container spacing={2} py={1}>
           <Grid item>
-            <Avatar src="me.jpg" className=" ml-3" />
+            <Avatar src="./me.jpg" className=" ml-3" />
           </Grid>
           <Grid item>
             <Typography
