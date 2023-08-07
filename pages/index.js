@@ -1,7 +1,4 @@
 import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import { Container, Divider } from "@mui/material";
@@ -17,8 +14,7 @@ export default function Main() {
         <Header />
       </div>
       <Layout>
-          <Home />
-       
+        <Home />
 
         <Divider color="primary" className=" my-5" />
         <AboutMe />

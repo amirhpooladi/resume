@@ -9,20 +9,12 @@ import {
   Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { TransitionGroup } from "react-transition-group";
-
-const useStyles = makeStyles({
-  root: {
-    color: "white",
-  },
-});
 
 export default function NavBar() {
-  const classes = useStyles();
   return (
     <>
       <List className=" flex  text-white rounded-lg justify-around lg:flex lg:flex-row  bg-slate-800  px-10    bg-opacity-30 ">
-        <ButtonGroup variant="text" >
+        <ButtonGroup variant="text">
           <div className=" lg:flex lg:flex-row">
             <Link
               to="home"
@@ -34,7 +26,6 @@ export default function NavBar() {
             >
               <ListItemButton
                 selected={false}
-                
                 size="small"
                 className=" rounded-lg "
               >
@@ -49,11 +40,7 @@ export default function NavBar() {
               offset={-70}
               duration={800}
             >
-              <ListItemButton
-                
-                size="small"
-                className=" rounded-lg "
-              >
+              <ListItemButton size="small" className=" rounded-lg ">
                 Skills
               </ListItemButton>
             </Link>
@@ -65,11 +52,7 @@ export default function NavBar() {
               offset={-70}
               duration={800}
             >
-              <ListItemButton
-                
-                size="small"
-                className=" rounded-lg "
-              >
+              <ListItemButton size="small" className=" rounded-lg ">
                 Contact
               </ListItemButton>
             </Link>
@@ -83,34 +66,18 @@ export default function NavBar() {
               offset={-70}
               duration={800}
             >
-              <ListItemButton
-                
-                size="small"
-                className="  rounded-lg "
-              >
+              <ListItemButton size="small" className="  rounded-lg ">
                 About me
               </ListItemButton>
             </Link>
-            <Link
-              to="projects"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={800}
-            >
-              <ListItemButton
-                
-                size="small"
-                className=" rounded-lg "
-              >
-                Projects
-              </ListItemButton>
-            </Link>
+
+            <ListItemButton size="small" className=" rounded-lg ">
+              Projects
+            </ListItemButton>
+
             <a href="AmirhosseinPooladi_Resume1.pdf" download>
               <ListItemButton
                 variant="filled"
-                
                 size="small"
                 className=" rounded-lg "
               >
