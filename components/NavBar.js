@@ -22,7 +22,7 @@ export default function NavBar() {
   return (
     <>
       <List className=" flex  text-white rounded-lg justify-around lg:flex lg:flex-row  bg-slate-800  px-10    bg-opacity-30 ">
-        <ButtonGroup variant="text" disableElevation>
+        <ButtonGroup variant="text" >
           <div className=" lg:flex lg:flex-row">
             <Link
               to="home"
@@ -34,7 +34,7 @@ export default function NavBar() {
             >
               <ListItemButton
                 selected={false}
-                disableElevation
+                
                 size="small"
                 className=" rounded-lg "
               >
@@ -50,7 +50,7 @@ export default function NavBar() {
               duration={800}
             >
               <ListItemButton
-                disableElevation
+                
                 size="small"
                 className=" rounded-lg "
               >
@@ -66,7 +66,7 @@ export default function NavBar() {
               duration={800}
             >
               <ListItemButton
-                disableElevation
+                
                 size="small"
                 className=" rounded-lg "
               >
@@ -84,7 +84,7 @@ export default function NavBar() {
               duration={800}
             >
               <ListItemButton
-                disableElevation
+                
                 size="small"
                 className="  rounded-lg "
               >
@@ -100,7 +100,7 @@ export default function NavBar() {
               duration={800}
             >
               <ListItemButton
-                disableElevation
+                
                 size="small"
                 className=" rounded-lg "
               >
@@ -110,7 +110,7 @@ export default function NavBar() {
             <a href="AmirhosseinPooladi_Resume1.pdf" download>
               <ListItemButton
                 variant="filled"
-                disableElevation
+                
                 size="small"
                 className=" rounded-lg "
               >
