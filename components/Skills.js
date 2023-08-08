@@ -1,16 +1,26 @@
+import React, { useEffect } from "react";
 import { Grid, List, Typography } from "@mui/material";
-import ScrollAnimation from "react-animate-on-scroll";
+import AOS from "aos"
+import "aos/dist/aos.css"
 import "animate.css";
 
-import React from "react";
+
 export default function Skills() {
+
+useEffect(()=>{
+  AOS.init({
+    offset:200,
+    duration:600,
+    easing:"ease-in-out",
+    delay:100
+  });
+  AOS.refresh()
+},[])
+
   return (
     <>
       <section id="skills" className=" mb-9">
-        <ScrollAnimation
-          animateIn="animate__animated animate__bounceInDown"
-          animateOut="ananimate__animated animate__bounceInDown"
-        >
+        <div data-aos="zoom-in">
           <List>
             <Typography color="white" fontWeight="bold" variant="h5" pt={8}>
               My <span className=" text-green-600"> Skills</span>{" "}
@@ -62,7 +72,7 @@ export default function Skills() {
               </Grid>
             </Grid>
           </List>
-        </ScrollAnimation>
+        </div>
       </section>
     </>
   );

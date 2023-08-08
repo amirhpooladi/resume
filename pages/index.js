@@ -6,11 +6,21 @@ import Home from "../components/Home";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
-
-import ScrollAnimation from "react-animate-on-scroll";
+import "aos/dist/aos.css"
 import "animate.css";
+import "animate.css";
+import AOS from "aos"
 
 export default function Main() {
+  useEffect(()=>{
+    AOS.init({
+      offset:200,
+      duration:600,
+      easing:"ease-in-out",
+      delay:100
+    });
+    AOS.refresh()
+  },[])
   const startPage = (
     
     <div id="startPage" className="animate__animated animate__lightSpeedInRight  flex justify-center mt-48   ">

@@ -1,16 +1,23 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import { Typography } from "@mui/material";
-import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 export default function AboutMe() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-out",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
   return (
+    
     <section id="aboutMe" className=" bg-slate-700  leading-relaxed h-max  ">
-      <ScrollAnimation
-        animateIn="animate__animated animate__bounceInDown"
-        animateOut="ananimate__animated animate__bounceInDown"
-      >
+      <div data-aos="fade-down">
         <Typography
           className=" leading-relaxed pt"
           color="white"
@@ -33,7 +40,8 @@ export default function AboutMe() {
           a responsible and diligent person in team works and I am always
           looking for innovative ideas.
         </Typography>
-      </ScrollAnimation>
+        </div>
     </section>
+   
   );
 }

@@ -1,9 +1,19 @@
 import { Button, TextField, Typography } from "@mui/material";
-import React, { useRef, useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import React, { useRef, useState,useEffect } from "react";
 import "animate.css";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function Contact() {
+  useEffect(()=>{
+    AOS.init({
+      offset:200,
+      duration:600,
+      easing:"ease-in-out",
+      delay:100
+    });
+    AOS.refresh()
+  },[])
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [comError, setComError] = useState(false);
@@ -31,9 +41,8 @@ export default function Contact() {
   return (
     
     <section id="contact" className="flex flex-col items-center pt-12">
-    <ScrollAnimation
-    animateIn="animate__animated animate__bounceInDown"
-    animateOut="ananimate__animated animate__bounceInDown"
+    <div data-aos="fade-down"
+   
   >
       <Typography variant="h5" color="white" fontWeight="bold">
         Get In <span className=" text-green-600"> Touch</span>
@@ -101,7 +110,7 @@ export default function Contact() {
       >
         Developed By Amirhossein Pooladi
       </Typography>
-      </ScrollAnimation>
+      </div>
     </section>
     
   );

@@ -19,9 +19,9 @@
     "@mui/material": "^5.14.3",
     "@mui/styled-engine-sc": "^5.12.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "next": "13.4.12",
     "react": "18.2.0",
-    "react-animate-on-scroll": "^2.1.7",
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.9",
     "styled-components": "^5.3.11"

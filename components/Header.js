@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "animate.css";
+import "aos/dist/aos.css"
+import AOS from "aos"
 
 import { Avatar, Button, Grid, Typography } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -7,6 +9,15 @@ import CloseIcon from "@mui/icons-material/Close";
 import NavBar from "./NavBar";
 
 export default function Header() {
+  useEffect(()=>{
+    AOS.init({
+      offset:200,
+      duration:600,
+      easing:"ease-in-out",
+      delay:100
+    });
+    AOS.refresh()
+  },[])
   const [icon, setIcon] = useState(true);
   const iconHandler = () => {
     setIcon((i) => !i);

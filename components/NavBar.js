@@ -1,24 +1,31 @@
-import React from "react";
+import React,{useEffect} from "react";
+import "aos/dist/aos.css"
+import AOS from "aos"
 import { Link } from "react-scroll";
 import {
   Button,
   ButtonGroup,
   List,
   ListItemButton,
-  ListItemText,
-  Typography,
 } from "@mui/material";
-import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css";
 
 export default function NavBar() {
+  useEffect(()=>{
+    AOS.init({
+      offset:200,
+      duration:600,
+      easing:"ease-in-out",
+      delay:100
+    });
+    AOS.refresh()
+  },[])
   return (
     <>
-      <ScrollAnimation
+      <div data-aos="zoom-in">
         
-        animateIn="animate__animated animate__bounceInDown"
-        animateOut="ananimate__animated animate__bounceInDown"
-      >
+     
+      
         <List className="  flex  text-white rounded-lg justify-around lg:flex lg:flex-row   bg-slate-800  px-10    bg-opacity-30 ">
           <ButtonGroup variant="text">
             <div className=" lg:flex lg:flex-row md:flex md:flex-row">
@@ -106,7 +113,7 @@ export default function NavBar() {
             </div>
           </ButtonGroup>
         </List>
-      </ScrollAnimation>
+      </div>
     </>
   );
 }

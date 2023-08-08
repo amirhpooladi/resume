@@ -4,8 +4,20 @@ import Layout from "../components/Layout";
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import { Button } from "@mui/material";
 import { Link } from "react-scroll";
+import "aos/dist/aos.css"
+import "animate.css";
+import AOS from "aos"
 
 function MyApp({ Component, pageProps }) {
+  useEffect(()=>{
+    AOS.init({
+      offset:200,
+      duration:600,
+      easing:"ease-in-out",
+      delay:100
+    });
+    AOS.refresh()
+  },[])
   const [scrollToTop, setScrollToTop] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
