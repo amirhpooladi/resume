@@ -8,7 +8,6 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 
 export default function NavBar() {
   return (

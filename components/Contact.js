@@ -1,19 +1,5 @@
 import { Button, TextField, Typography } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import React, { useRef, useState } from "react";
-
-const useStyles = makeStyles({
-  input: {
-    "&::placeholder": {
-      color: "green",
-    },
-  },
-  Button: {
-    "&::hover": {
-      color: "red",
-    },
-  },
-});
 
 export default function Contact() {
   const [nameError, setNameError] = useState(false);

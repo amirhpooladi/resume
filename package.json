@@ -11,14 +11,13 @@
     "export": "next export",
     "deploy": "npm run build && npm run export && gh-pages -d out"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
     "@mui/styled-engine-sc": "^5.12.0",
-    "@mui/styles": "^5.14.3",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
