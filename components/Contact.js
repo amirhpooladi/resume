@@ -29,11 +29,12 @@ export default function Contact() {
   };
 
   return (
+    
+    <section id="contact" className="flex flex-col items-center pt-12">
     <ScrollAnimation
-    animateIn="animate__animated animate__backInRight"
+    animateIn="animate__animated animate__bounceInDown"
     animateOut="ananimate__animated animate__bounceInDown"
   >
-    <section id="contact" className="flex flex-col items-center pt-12">
       <Typography variant="h5" color="white" fontWeight="bold">
         Get In <span className=" text-green-600"> Touch</span>
       </Typography>
@@ -100,7 +101,8 @@ export default function Contact() {
       >
         Developed By Amirhossein Pooladi
       </Typography>
+      </ScrollAnimation>
     </section>
-    </ScrollAnimation>
+    
   );
 }

@@ -10,4 +10,8 @@ background-image: url("../public/1.jpg");
 
 }
 
+#startPage{
+  animation-duration: 1s;
+}
+
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import 'animate.css';
+import "animate.css";
 
 import { Avatar, Button, Grid, Typography } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -14,10 +14,16 @@ export default function Header() {
 
   return (
     <>
-      <section id="header" className=" flex justify-between mt-5 mb-16">
-        <Grid container spacing={2} py={1} >
+      <section
+        id="header"
+        className=" flex justify-between mt-5 mb-5 animate__animated animate__backInDown"
+      >
+        <Grid container spacing={2} py={1}>
           <Grid item>
-            <Avatar src="./me.jpg" className=" ml-3 transition  ease-in-out delay-150 hover:scale-150 duration-200" />
+            <Avatar
+              src="./me.jpg"
+              className=" ml-3 transition  ease-in-out delay-150 hover:scale-150 duration-200"
+            />
           </Grid>
           <Grid item>
             <Typography

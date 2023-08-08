@@ -20,13 +20,13 @@ export default function Home() {
           quality of work with finest resault.
         </Typography>
         <ScrollAnimation
-          animateIn="animate__animated animate__backInRight"
+          animateIn="animate__animated animate__bounceInDown"
           animateOut="ananimate__animated animate__bounceInDown"
         >
           <div className=" my-20">
             <a href="https://github.com/amirhpooladi" target="_blank">
-              <Button className=" hover: bg-slate-700 mr-2 animate-pulse ">
-                <GitHubIcon color=" text-green-600" className=" text-3xl m-3" />
+              <Button className=" hover: bg-slate-700 mr-2   ">
+                <GitHubIcon color=" text-green-600" className=" text-3xl m-3 animate__animated animate__heartBeat animate__infinite " />
               </Button>
             </a>
 
@@ -34,22 +34,22 @@ export default function Home() {
               href="https://www.linkedin.com/in/amirhossein-pooladi-6b4679277/"
               target="_blank"
             >
-              <Button className=" hover: bg-slate-700 mr-2 animate-pulse">
+              <Button className=" hover: bg-slate-700 mr-2 ">
                 <LinkedInIcon
                   color=" text-green-600"
-                  className=" text-3xl m-3"
+                  className=" text-3xl m-3 animate__animated animate__heartBeat animate__infinite "
                 />
               </Button>
             </a>
 
             <a href="AmirhosseinPooladi_Resume1.pdf" download>
               <Button className=" hover: bg-slate-700 mr-2  ">
-                <svg className="animate-bounce w-14 h-14">
+                
                   <FileDownloadIcon
                     color=" text-green-600"
-                    className=" text-3xl m-3 "
+                    className=" text-3xl m-3 animate__animated animate__bounce animate__infinite animate__slow"
                   />
-                </svg>
+                
                 <span className=" text-green-600">resume</span>
               </Button>
             </a>
