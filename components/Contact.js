@@ -26,7 +26,7 @@ export default function Contact() {
     }
   };
 
-  const classes = useStyles();
+
   return (
     <section id="contact" className="flex flex-col items-center pt-12">
       <Typography variant="h6" color="white" fontWeight="bold">
