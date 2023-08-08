@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-import { Container, Divider } from "@mui/material";
+import { Divider } from "@mui/material";
 import Home from "../components/Home";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
