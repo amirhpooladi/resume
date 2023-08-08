@@ -1,5 +1,7 @@
 import { Button, TextField, Typography } from "@mui/material";
 import React, { useRef, useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css";
 
 export default function Contact() {
   const [nameError, setNameError] = useState(false);
@@ -26,10 +28,13 @@ export default function Contact() {
     }
   };
 
-
   return (
+    <ScrollAnimation
+    animateIn="animate__animated animate__backInRight"
+    animateOut="ananimate__animated animate__bounceInDown"
+  >
     <section id="contact" className="flex flex-col items-center pt-12">
-      <Typography variant="h6" color="white" fontWeight="bold">
+      <Typography variant="h5" color="white" fontWeight="bold">
         Get In <span className=" text-green-600"> Touch</span>
       </Typography>
       <Typography
@@ -40,7 +45,10 @@ export default function Contact() {
       >
         Contact Me
       </Typography>
-      <form type="submit" className="flex flex-col">
+      <form 
+        type="submit"
+        className=" text-white flex flex-col bg-stone-200 p-20 rounded-3xl "
+      >
         <TextField
           onChange={() => setNameError(false)}
           helperText={nameError && helperText}
@@ -51,7 +59,6 @@ export default function Contact() {
           placeholder="Enter your name"
           label="Name"
           color="success"
-          
         />
         <TextField
           onChange={() => setEmailError(false)}
@@ -63,10 +70,10 @@ export default function Contact() {
           placeholder="Enter your email"
           color="success"
           label="Email"
-          className=" mt-4 "
-         
+          className="mt-4"
         />
         <TextField
+          className="mt-4  placeholder-white"
           onChange={() => setComError(false)}
           helperText={comError && helperText}
           inputRef={comRef}
@@ -77,16 +84,23 @@ export default function Contact() {
           placeholder="All your comments will be read and even published:)"
           color="success"
           label="comments"
-          className=" mt-4  "
         />
+
         <Button
           onClick={submitHandler}
-          className=" bg-green-600 hover:bg-orange-500 mt-10"
+          className=" bg-green-600 hover:bg-orange-500 mt-10 mb-20"
           variant="contained"
         >
           Submit
         </Button>
       </form>
+      <Typography
+        color="white"
+        className=" sticky bottom-0w-max flex justify-center rounded-full mb-4 mt-5"
+      >
+        Developed By Amirhossein Pooladi
+      </Typography>
     </section>
+    </ScrollAnimation>
   );
 }

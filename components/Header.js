@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import 'animate.css';
 
 import { Avatar, Button, Grid, Typography } from "@mui/material";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -13,10 +14,10 @@ export default function Header() {
 
   return (
     <>
-      <section id="header" className=" flex justify-between mt-5">
-        <Grid container spacing={2} py={1}>
+      <section id="header" className=" flex justify-between mt-5 mb-16">
+        <Grid container spacing={2} py={1} >
           <Grid item>
-            <Avatar src="./me.jpg" className=" ml-3" />
+            <Avatar src="./me.jpg" className=" ml-3 transition  ease-in-out delay-150 hover:scale-150 duration-200" />
           </Grid>
           <Grid item>
             <Typography
@@ -33,10 +34,10 @@ export default function Header() {
           <Button onClick={iconHandler}>
             {icon ? (
               <div>
-                <MenuRoundedIcon className=" text-green-600 " />
+                <MenuRoundedIcon className="   text-green-600 transition  ease-in-out delay-150 hover:-translate-x-2 hover:scale-150 duration-200 " />
               </div>
             ) : (
-              <CloseIcon className=" text-green-600 " />
+              <CloseIcon className=" text-green-600 transition  ease-in-out delay-150 hover:-translate-x-2 hover:scale-150 duration-200 " />
             )}
           </Button>
         </Grid>

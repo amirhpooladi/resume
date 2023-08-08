@@ -10,7 +10,7 @@ import Contact from "../components/Contact";
 export default function Main() {
   return (
     <>
-      <div className="  top-0 bg-slate-800 bg-opacity-90  min-w-full  rounded-3xl">
+      <div className="  top-0 bg-slate-800 bg-opacity-90 rounded-3xl">
         <Header />
       </div>
       <Layout>
